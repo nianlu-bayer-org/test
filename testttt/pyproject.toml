@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "hypatia-api-server"
+version = "0.1.0"
+description = "Boosting productivity with language AI"
+authors = ["Nianlu Shu <nianlu.shu@bayer.com>"]
+readme = "README.md"
+packages = [{include = "api_server"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.95.0"
+uvicorn = {extras = ["standard"], version = "^0.21.1"}
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
